@@ -1,0 +1,10 @@
+name: asm-containers
+
+services:
+    programming:
+        build: .
+        platform: linux/arm64
+        volumes:
+            - ../codes:/work
+        tty: true
+        stdin_open: true
